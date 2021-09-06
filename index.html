@@ -1,4 +1,4 @@
-iv<!doctype html>
+<!doctype html>
 <html lang="ko">
 
 <head>
@@ -18,8 +18,12 @@ iv<!doctype html>
   <!-- swiper -->
   <link rel="stylesheet" href="js/swiper/swiper.min.css">
   <script src="js/swiper/swiper.min.js"></script>
+  <!-- waypoint -->
+  <script src="js/waypoints.min.js"></script>
   <!-- normalize.css -->
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" href="css/fontello/css/animation.css">
+  <link rel="stylesheet" href="css/fontello/css/fontello.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <!-- script.js -->
   <script src="js/script.js"></script>
@@ -39,6 +43,19 @@ iv<!doctype html>
             <li><a href="#">news&events</a></li>
           </ul>
         </nav>
+        <!-- 모바일 메뉴 -->
+        <span class="mb-menu">
+          <i class="icon-th"></i>
+        </span>
+      </div>
+      <div class="mb-gnb">
+        <a href="#" class="mb-gnb-close">&#215;</a>
+        <ul class="mb-gnb-list">
+          <li><a href="#">nexus</a></li>
+          <li><a href="#">brands</a></li>
+          <li><a href="#">products</a></li>
+          <li><a href="#">news&event</a></li>
+        </ul>
       </div>
     </header>
     <!-- //상단영역 -->
@@ -48,57 +65,55 @@ iv<!doctype html>
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="visual-box v1">
-              <div class="container">
-                <img src="images/img-nexus-logo.svg" alt="nexus">
-              </div>
+              <img src="images/img-nexus-logo.svg" alt="nexus">
             </div>
           </div>
           <div class="swiper-slide">
             <div class="visual-box v2">
-              <div class="container">
-                <img src="images/img-molteni-logo-2.svg" alt="molteni">
-              </div>
+
+              <img src="images/img-molteni-logo-2.svg" alt="molteni">
+
             </div>
           </div>
           <div class="swiper-slide">
             <div class="visual-box v3">
-              <div class="container">
-                <img src="images/img-dada-logo-2.svg" alt="dada">
-              </div>
+
+              <img src="images/img-dada-logo-2.svg" alt="dada">
+
             </div>
           </div>
           <div class="swiper-slide">
             <div class="visual-box v4">
-              <div class="container">
-                <img src="images/img-gessi-logo-2.svg" alt="gessi">
-              </div>
+
+              <img src="images/img-gessi-logo-2.svg" alt="gessi">
+
             </div>
           </div>
           <div class="swiper-slide">
             <div class="visual-box v5">
-              <div class="container">
-                <img src="images/img-fontana-logo-2.svg" alt="fontana">
-              </div>
+
+              <img src="images/img-fontana-logo-2.svg" alt="fontana">
+
             </div>
           </div>
           <div class="swiper-slide">
             <div class="visual-box v6">
-              <div class="container">
-                <img src="images/img-kettal-logo-2.svg" alt="kettal">
-              </div>
+
+              <img src="images/img-kettal-logo-2.svg" alt="kettal">
+
             </div>
           </div>
         </div>
         <div class="swiper-pagination sw-visual-pg"></div>
       </div>
+      <div class="story-box-top">
+        <h2 class="story-tit">our story</h2>
+      </div>
     </section>
     <!-- //비쥬얼영역 -->
     <!-- 스토리영역 -->
     <section class="story">
-      <div class="container">
-        <div class="story-box story-box-top">
-          <h2 class="story-tit">our story</h2>
-        </div>
+      <div class="container">        
         <div class="story-box story-box-first story-1">
           <p class="story-box-desc">
             인테리어에 대한 새로운 가치를<br>
@@ -202,23 +217,24 @@ iv<!doctype html>
         <h2 class="brand-tit">
           Nexus Brands
         </h2>
-        <a href="#" class="brand-link"><img src="images/img_main_logo_molteni.svg" </a>
-        <a href="#" class="brand-link"><img src="images/img_main_logo_dada.svg" </a>
-        <a href="#" class="brand-link"><img src="images/img_main_logo_schramm.svg" </a>
-        <a href="#" class="brand-link"><img src="images/img_main_logo_kettal.svg" </a>
-        <a href="#" class="brand-link"><img src="images/img_main_logo_gessi.svg" </a>
-        <a href="#" class="brand-link"><img src="images/img_main_logo_laufen.svg" </a>
-        <a href="#" class="brand-link"><img src="images/img_main_logo_duravit.svg" </a>
-        <a href="#" class="brand-link"><img src="images/img_main_logo_axent.svg" </a>
-        <a href="#" class="brand-link"><img src="images/img_main_logo_louispoulsen.svg" </a>
-        <a href="#" class="brand-link"><img src="images/img_main_logo_fontana.svg" </a>
-        <a href="#" class="brand-link"><img src="images/img_main_logo_kvadrat.svg" </a>
-        <a href="#" class="brand-link"><img src="images/img_main_logo_porcelanosa.svg" </a>
-        <a href="#" class="brand-link"><img src="images/img_main_logo_fd.svg" </a>
-        <a href="#" class="brand-link"><img src="images/img_main_logo_casalgrande.svg" </a>
-        <a href="#" class="brand-link"><img src="images/img_main_logo_mafi.svg" </a>
-        <a href="#" class="brand-link"><img src="images/img_main_logo_giant.svg" </a>
+        <a href="#" class="brand-link"><img src="images/img_main_logo_molteni.svg"> </a>
+        <a href="#" class="brand-link"><img src="images/img_main_logo_dada.svg"> </a>
+        <a href="#" class="brand-link"><img src="images/img_main_logo_schramm.svg"> </a>
+        <a href="#" class="brand-link"><img src="images/img_main_logo_kettal.svg"> </a>
+        <a href="#" class="brand-link"><img src="images/img_main_logo_gessi.svg"> </a>
+        <a href="#" class="brand-link"><img src="images/img_main_logo_laufen.svg"> </a>
+        <a href="#" class="brand-link"><img src="images/img_main_logo_duravit.svg"> </a>
+        <a href="#" class="brand-link"><img src="images/img_main_logo_axent.svg"> </a>
+        <a href="#" class="brand-link"><img src="images/img_main_logo_louispoulsen.svg"> </a>
+        <a href="#" class="brand-link"><img src="images/img_main_logo_fontana.svg"> </a>
+        <a href="#" class="brand-link"><img src="images/img_main_logo_kvadrat.svg"> </a>
+        <a href="#" class="brand-link"><img src="images/img_main_logo_porcelanosa.svg"> </a>
+        <a href="#" class="brand-link"><img src="images/img_main_logo_fd.svg"> </a>
+        <a href="#" class="brand-link"><img src="images/img_main_logo_casalgrande.svg"> </a>
+        <a href="#" class="brand-link"><img src="images/img_main_logo_mafi.svg"> </a>
+        <a href="#" class="brand-link"><img src="images/img_main_logo_giant.svg"> </a>
       </div>
+
     </section>
     <!-- //브랜드 영역 -->
     <!-- 하단영역 -->
@@ -252,8 +268,9 @@ iv<!doctype html>
       </div>
     </footer>
     <!-- //하단영역 -->
+
   </div>
-  
+
 </body>
 
 </html>
